@@ -1,0 +1,80 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+#app details
+  app_title: Book Collection
+  app_descriprion: A place where you can find a collection of the books
+
+  #home page titles
+  home:
+    home:
+      book: Books
+      library: Libraries
+      author: Authors
+      footer: All images belong to their respective owners!
+
+#contact page labels
+    contact:
+      title: Contact Us
+      contact_us: Complete the form below to get in touch with us!
+
+      name: "Name:"
+      enter_name: Enter your Name
+      email: "Email:"
+      enter_email: Enter your email address
+      telephone: "Telephone:"
+      enter_telephone: Enter your telephone number
+      message: "Message:"
+      enter_message: What do you want to say?
+      submit: Contact Us
+
+    request_contact:
+      no_email: You must supply an email address
+      email_sent: Thank you. We will be in touch shortly.
+
+  book:
+    book: Title
+    genre: Genre
+    author: Author
+    library: Library
+    edit: Editing Book
+    new: New Book
+  author:
+    author: Name
+    dob: D.O.B
+    edit: Editing Author
+    new: New Author
+  library:
+    library: Name
+    active: Active
+    edit: Editing Library
+    new: New Library

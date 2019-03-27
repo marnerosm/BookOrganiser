@@ -1,0 +1,30 @@
+%h1= t('home.home.book')
+
+
+%table
+  %thead
+    %tr
+      %th= t('book.book')
+      %th= t('book.genre')
+      %th= t('book.author')
+      %th= t('book.library')
+      %th
+      %th
+      %th
+
+
+  %tbody
+    - @books.each do |book|
+      %tr
+        %td= book.title
+        %td= book.genre
+        %td= book.author.name
+        %td= book.library.name
+        %td= link_to 'Show', book
+        %td= link_to 'Edit', edit_book_path(book)
+        %td= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Book', new_book_path
+= link_to 'Back', root_path

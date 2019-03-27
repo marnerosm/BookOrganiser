@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b= t('library.library')
+  = @library.name
+%p
+  %b= t('library.active')
+  = @library.active
+
+= link_to 'Edit', edit_library_path(@library)
+\|
+= link_to 'Back', libraries_path

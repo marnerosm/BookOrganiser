@@ -1,0 +1,24 @@
+%h1= t('home.home.library')
+
+%table
+  %thead
+    %tr
+      %th= t('library.library')
+      %th= t('library.active')
+      %th
+      %th
+      %th
+
+  %tbody
+    - @libraries.each do |library|
+      %tr
+        %td= library.name
+        %td= library.active
+        %td= link_to 'Show', library
+        %td= link_to 'Edit', edit_library_path(library)
+        %td= link_to 'Destroy', library, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Library', new_library_path
+= link_to 'Back', root_path

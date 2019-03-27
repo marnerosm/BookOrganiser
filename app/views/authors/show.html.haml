@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b= t('author.author')
+  = @author.name
+%p
+  %b= t('author.dob')
+  = @author.dob
+
+= link_to 'Edit', edit_author_path(@author)
+\|
+= link_to 'Back', authors_path

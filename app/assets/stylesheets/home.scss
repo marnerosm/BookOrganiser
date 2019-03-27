@@ -1,0 +1,38 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.home {
+  //aligning the home images
+  text-align: center;
+  display: flex;
+  padding: 170px 450px 300px;
+  text-align: center;
+  float: inherit;
+    a {
+      padding: 10px;
+      alignment: center;
+      margin-left: 10%;
+      margin-right: 10%;
+
+      outline: none;
+      color: #EFEFEF !important;
+    }
+    a:hover {
+      text-decoration: none;
+      color: #EFEFEF;
+    }
+
+  }
+//style for h1 header
+h1{
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  padding: 50px;
+  color: #EFEFEF;
+}
+form label, form input {
+  display: block;
+  margin: 3%;
+  color: white;
+}

@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b= t('book.author')
+  = @book.author.name
+%p
+  %b= t('book.library')
+  = @book.library.name
+%p
+  %b= t('book.book')
+  = @book.title
+%p
+  %b= t('book.genre')
+  = @book.genre
+
+= link_to 'Edit', edit_book_path(@book)
+\|
+= link_to 'Back', books_path

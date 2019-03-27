@@ -1,0 +1,104 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/*  backround colour of page*/
+html{
+  background-color: #535353;
+}
+/*  backround colour of page*/
+body{
+  background-color: #535353;
+  padding: 0px 0px 100px;
+}
+/*backround colour of navigation menu*/
+nav {
+  background-color: #2b7dcc;
+  color: #EFEFEF;
+
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+header,footer{
+  /*styles of <a> tag*/
+a{
+  text-decoration: none;
+  color: #EFEFEF;
+}
+}
+a:hover{
+  text-decoration: none;
+  color: #EFEFEF;
+}
+
+nav .container .home-button,
+nav .container .contact-button{
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  alignment: center
+}
+
+
+.footer_class {
+  background-color: #2b7dcc;
+  p{
+    text-align: center;
+  }
+  background-color: #2b7dcc;
+  .footer_section {
+    text-align: center;
+    position: relative;
+    h2{
+      display: inline;
+    }
+  }
+}
+/*header styles*/
+header{
+  margin-top: 0%;
+  a{
+    alignment: center;
+  }
+  nav{
+    padding: 20px;
+  }
+}
+
+/*footer styles*/
+footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  nav{
+    padding: 20px;
+    margin: 0%;
+  }
+}
+
+/*home and contact button style*/
+.home-button,.contact-button {
+  margin-top: 5px;
+  color: white;
+}

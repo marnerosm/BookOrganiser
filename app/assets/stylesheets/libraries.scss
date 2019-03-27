@@ -1,0 +1,35 @@
+// Place all the styles related to the Libraries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//Stylesheet for libraries table
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #404247;
+}
+
+tr:hover {background-color:#f5f5f5;}
+tr{background-color: #f2f2f2;}
+
+th {
+  background-color: #2b7dcc;
+  color: white;
+}
+.field{
+  color: #fff;
+}
+b{
+  color: white;
+  margin: 10px;
+}
+p{
+  color: white;
+  margin: 10px;
+}

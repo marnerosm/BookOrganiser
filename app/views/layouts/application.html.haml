@@ -1,0 +1,24 @@
+%html
+  %head
+    %meta{'charset' => 'utf-8'}
+    %meta{'http-equiv' => 'x-ua-compatible', 'content' => 'ie=edge'}
+
+    %title= t('app_title')
+
+    %meta{'name' => 'description', 'content' => t('app_description')}
+    %meta{'name' => 'viewport', 'content' => 'width=device-width, initial-scale=1'}
+
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag 'modernizr'
+    = csrf_meta_tags
+
+
+  %body
+
+    - flash.each do |key, value|
+      =content_tag :div, content_tag(:p,value), id: "#{key}" unless value.blank?
+
+    = render :partial => 'shared/header'
+    .container= yield
+    = render :partial => 'shared/footer'
